@@ -9,7 +9,7 @@ var utah_Birds = ["hawk", "condor", "eagle", "osprey", "seagull", "hummingbird",
 var selected_word;
 var dashes = [];
 var selected_word_array = [];
-
+var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 
 // picks a random word from utah_Birds array
@@ -94,18 +94,26 @@ document.onkeyup = function (event) {
     
     if (guesses_remaining === 0){
         numOfLoses +=1;
-        alert("You Lose!");
+        // alert("You Lose!");
+        updateGameLogic();
         resetGame();
-
+        console.log("You lose!")
 
     }
     else if (guesses_remaining > 0){
         if(dashes.join('') === selected_word){
             numOfWins +=1;
-            alert("You Won!")
+            // alert("You Won!")
+            updateGameLogic();
             resetGame();
+            console.log("You won!")
         }
     }
+
+    function letterScan.inside((alphabet))
+
+
+
 
     //update the html interface
     updateGameLogic();
