@@ -110,10 +110,7 @@ document.onkeyup = function (event) {
         }
     }
 
-    function letterScan.inside((alphabet))
-
-
-
+ 
 
     //update the html interface
     updateGameLogic();
